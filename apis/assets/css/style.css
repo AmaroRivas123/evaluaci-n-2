@@ -1,0 +1,145 @@
+.fila{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pelicula-card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: #000;
+  flex-shrink: 0;
+}
+
+.pelicula-card:hover {
+  transform: scale(1.03);
+}
+
+.pelicula-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.pelicula-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: #fff;
+}
+
+.pelicula-title {
+  font-weight: 600;
+  margin: 0;
+}
+
+
+.pelicula-info {
+  font-size: 0.9rem;
+  color: #ccc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px 0 0;
+}
+
+.pelicula-rating {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pelicula-rating .rating-year {
+ color: #666;
+  font-size: 12px;
+}
+
+.pelicula-rating span {
+  color: #ffd700;
+  font-size: 12px;
+}
+
+.pelicula-rating span.vacia {
+  color: #ccc;
+}
+
+.pelicula-genre {
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: auto;
+  background: #ffffff;
+  color: #333;
+  font-weight: bold;
+  font-size: 8px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.buscar-container {
+  display: flex;
+  margin: 20px;
+}
+
+#busqueda{
+  width: 300px;
+  padding: 10px;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin: 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 15px 25px;
+  text-align: right;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+body {
+  background-color: #111111;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.btn-group{
+  margin-left:10px
+}
